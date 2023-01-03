@@ -13,7 +13,7 @@ public class testClass {
 	
 	@GetMapping("/info")
 	public String projectInfo() {
-		return "안녕하세요. 이 프로젝트는 일단 임시로 만들어보았습니다.";
+		return "안녕하세요. 이 프로젝트는 일단 임시로 만들어보았습니다.ggg";
 	}
 	
 	@GetMapping("/info02")
