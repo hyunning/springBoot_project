@@ -15,8 +15,12 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript" src="resources/js/jquery-3.6.3.min.js"></script>
     </head>
     <body>
+        <c:forEach var="item" items="${list}" varStatus="idx">
+        ${idx.index}st, Hello! ${item.name} <br />
+    </c:forEach>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -151,4 +155,9 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+</script>
 </html>
